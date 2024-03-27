@@ -7,7 +7,7 @@ use diagnostics;
 my $clients = `cp -avr /etc/openvpn/client/* /var/www/html/`;
 print "$clients";
 my $open_apache2 = `systemctl start apache2.service`;
-my $apache_ststus = `systemctl status apache2.service`;
+my $apache_status = `systemctl status apache2.service`;
 print "$apache_status\n";
 print "WARNING:\n";
 print "Your web share is running, don't forget to stop your apache2 after you finish the job!";
